@@ -23,6 +23,8 @@
         <meta property="og:site_name" content="European Travel, Inc.">
         -->
         <!--[if IE]><link rel="shortcut icon" href="images/favicon.ico"><![endif]-->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="./dist/css/css-grid.min.css"/>
     </head>
     <body>
@@ -42,5 +44,16 @@
         <aside>Aside</aside>  
         <footer>Footer content</footer>       
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', (evt)=>{  
+                var els = document.querySelectorAll('.toggle-side-nav');
+                els.forEach((el, idx)=>{
+                    el.addEventListener('click', ()=>{
+                    document.querySelectorAll('.page-wrapper')[0].classList.toggle('side-nav-on');
+                    })
+                    console.log(el);
+                });
+            });
+        </script>
     </body>
 </html>
