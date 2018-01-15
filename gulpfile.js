@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     scss = require('gulp-sass');
 
 gulp.task('scss', () => {
-    gulp.src('client/sass/style.scss')
+    gulp.src('client/sass/*.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(scss({outputStyle: 'compressed'})
@@ -19,7 +19,7 @@ gulp.task('scss', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('client/sass/style.scss', ['scss']);
+    gulp.watch('client/sass/*.scss', ['scss']);
 })
 
 gulp.task('default', ['scss', 'watch']);
