@@ -1,23 +1,24 @@
 .page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 6fr;
-  grid-gap: 1em;
-  > * {
-    background-color: #9e9e9e;
-    text-align: center;
-    box-shadow: 1px 1px 3px;
-    padding: 1em;
-  }
-  > .sidenav {
-    position: fixed;
-    height: 0;
-    display: none;
-    overflow: hidden;
-  }
-  > main {
-    min-height: 250px;
-  }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr;
+        grid-gap: 1em;
+        padding: .5em;
+    > * {
+        background-color: #9e9e9e;
+        text-align: center;
+        box-shadow: 1px 1px 3px;
+        padding: 1em;
+    }
+    > .sidenav {
+        position: fixed;
+        height: 0;
+        display: none;
+        overflow: hidden;
+    }
+    > main {
+        min-height: 250px;
+    }
 }
 
 .page-wrapper.side-nav-on > .sidenav {
@@ -31,39 +32,39 @@
     float: left;
 }
 
-@media (min-width: 768px) {
-  .page-wrapper {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    > header {
-      grid-column: 1 / auto-fill;
-    }
-    > .topnav {
-      grid-column: 1 / auto-fill;
-    }
-    > .sidenav {
-      grid-column: 1 / 3;
-      position: inherit;
-    }
-    > main {
-      grid-column: 3 / 10;
-    }
-    > aside {
-      grid-column: 10 / auto-fill;
-    }
-    > .sidenav{ display: inherit; height: inherit;}
-    > .sidenav,
-    > main,
-    > aside {
-      grid-row: 3/12;
+    @media (min-width: 768px) {
+    .page-wrapper {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        > header {
+            grid-column: 1 / auto-fill;
+        }
+        > .topnav {
+            grid-column: 1 / auto-fill;
+        }
+        > .sidenav {
+            grid-column: 1 / 3;
+            position: inherit;
+        }
+        > main {
+            grid-column: 3 / 10;
+        }
+        > aside {
+            grid-column: 10 / auto-fill;
+        }
+        > .sidenav{ display: inherit; height: inherit;}
+        > .sidenav,
+        > main,
+        > aside {
+            grid-row: 3/12;
+        }
+
+        > footer {
+            grid-column: 1 / auto-fill;
+        }
     }
 
-    > footer {
-      grid-column: 1 / auto-fill;
+    #btn-open-side-nav, #btn-close-side-nav{
+        display: none;
     }
-  }
-  
-  #btn-open-side-nav, #btn-close-side-nav{
-    display: none;
-  }
 }
