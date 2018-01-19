@@ -1,0 +1,45 @@
+
+/*top-nav and side-nav*/
+.nav-links{
+  padding: 0;
+  margin:0;  
+  list-style: none;
+    background: #76be98;
+  > li {
+    background: #76be23;
+    &:hover{
+      background-color: #ddd;
+    }
+    a{padding: 0 8px;}
+  }
+}
+
+.page-wrap{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em;  
+  outline: dashed red 1px;
+  >{ 
+    *{
+      flex-basis: 100%;
+        box-shadow: 1px 1px 3px #000;
+      &:nth-child(odd){
+      }
+    }
+    header{
+      display: flex;
+      flex-flow: row wrap;
+      .top-nav .nav-links{
+        display: flex;
+
+      }
+    }
+    .site-icon{
+      flex: 150px;
+    }
+    .nav-links{
+
+    }
+
+  }
+}

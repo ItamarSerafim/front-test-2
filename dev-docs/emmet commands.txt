@@ -1,0 +1,41 @@
+<!-- Skip The Div #1 -->
+div.container
+ 
+<!-- Skip The Div #2 -->
+.container
+ 
+<!-- Implicit Tag Names -->
+.wrap>ul.list>.sites
+ 
+<!-- Chaining Abbreviations -->
+.outer>.inner>h1+p
+ 
+<!-- Climbing Up #1 -->
+.wrap>p>a^p
+ 
+<!-- Climbing Up #2 -->
+.wrap>p>em>a^^p
+ 
+<!-- Grouping #1 -->
+(.one>h1)+(.two>h1)
+ 
+<!-- Grouping #2 -->
+(section>.wrap>h1>p>a)+(section>.wrap>p+p)
+ 
+<!-- Text & Attributes #1 -->
+h1{heading}+p{lorem ipsum}
+ 
+<!-- Text & Attributes #2 -->
+a[href="http://www.apple.com"]{Apple}
+ 
+<!-- Multiple Class Names -->
+.one.two.three
+ 
+<!-- Multiplication #1 -->
+ul>li*3
+ 
+<!-- Multiplication #2 -->
+(section>.wrap)*2
+ 
+<!-- Automatic Numbering -->
+ul>li.item${item $$}*3
