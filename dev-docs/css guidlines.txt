@@ -1,0 +1,5 @@
+1) Why you don’t need device specific breakpoints:
+    https://responsivedesign.is/articles/why-you-dont-need-device-specific-breakpoints/
+2) SASS tutorial:
+    http://sass-lang.com/guide
+

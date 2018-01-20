@@ -1,16 +1,55 @@
+.spacer{flex: 1;}
 
 /*top-nav and side-nav*/
 .nav-links{
   padding: 0;
   margin:0;  
   list-style: none;
-    background: #76be98;
+  background: #76be98;
   > li {
-    background: #76be23;
+    display: flex;
+    justify-content: center;
     &:hover{
       background-color: #ddd;
+      cursor: pointer;
     }
-    a{padding: 0 8px;}
+    a{
+      padding: 12px ;
+    }
+  }
+}
+
+.top-nav{
+  .nav-links{
+    flex-flow: row wrap;
+    justify-content: center;
+    > li{
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+.aside-cards{
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0px;
+  >li{
+    /*
+    display: flex;
+    flex-flow: row wrap;
+    */
+    margin: 5px 0;
+    >{
+      .thumbnail{
+        float: left;
+        margin: 0 10px 5px 0px;
+      }
+      .card-content{
+        >h3{ margin: 0;}
+      }
+    }
   }
 }
 
@@ -22,13 +61,15 @@
   >{ 
     *{
       flex-basis: 100%;
-        box-shadow: 1px 1px 3px #000;
+      margin: .5em 0;
+      box-shadow: 1px 1px 3px #000;
       &:nth-child(odd){
       }
     }
     header{
       display: flex;
       flex-flow: row wrap;
+      justify-content: center;
       .top-nav .nav-links{
         display: flex;
 
