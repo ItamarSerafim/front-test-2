@@ -2,4 +2,5 @@
     https://responsivedesign.is/articles/why-you-dont-need-device-specific-breakpoints/
 2) SASS tutorial:
     http://sass-lang.com/guide
-
+2) The best front-end hacking cheatsheets — all in one place
+  https://medium.freecodecamp.org/modern-frontend-hacking-cheatsheets-df9c2566c72a
