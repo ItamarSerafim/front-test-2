@@ -1,6 +1,7 @@
 https://frontendchecklist.io/
 https://www.smashingmagazine.com/2009/06/45-incredibly-useful-web-design-checklists-and-questionnaires/
-
+http://cameronmoll.com/archives/2008/06/web_accessibility_checklist/ or http://cameronmoll.com/downloads/Web_Accessibility_Checklist.pdf
+https://www.smashingmagazine.com/2009/06/45-incredibly-useful-web-design-checklists-and-questionnaires/
 
 1) Why you don’t need device specific breakpoints:
     https://responsivedesign.is/articles/why-you-dont-need-device-specific-breakpoints/
